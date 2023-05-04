@@ -57,7 +57,7 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
     If you receive this output, proceed to the **Once Per Table** note below.
     ![](./images/graylog_pc1.png)
 
-    If you receive this output, proceed to [Configure Syslog on Prism Element](./chapter1.md/#configure-syslog-on-prism-element).
+    If you receive this output, proceed to [Configure Syslog on Prism Element](#configure-syslog-on-prism-element).
     ![](./images/graylog_pc3.png)
 
     !!!warning "Once Per Table"
