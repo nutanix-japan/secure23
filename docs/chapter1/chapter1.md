@@ -27,41 +27,7 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
 
     We’ll use Graylog to receive audit and [syslog](https://en.wikipedia.org/wiki/Syslog) events from the cluster.
 
-3. Open Remote Desktop.
-
-    Windows:
-      - Click **Start Menu > Remote Desktop Connection**.
-
-      - - Within the **Computer:** field, enter `USER##-WINTOOLS-IP-ADDRESS` (ex. 10.55.1.123), and click **Connect**.
-        ![](./images/remote_desktop1.png)
-
-      - Click **More Choices > Use a different account**.
-        ![](./images/remote_desktop2.png)
-
-      - Fill out the following fields, and click **OK**.
-        - **Email address** - `administrator`
-        - **Password** - `nutanix/4u`
-
-      - Click **Don't ask me again for connections to this computer**, and click **Yes**.
-        ![](./images/remote_desktop3.png)
-
-    Mac:
-    - Open Microsoft Remote Desktop.
-
-    - From the top menu, click **:fa-plus: > Add PC**. Fill out the following fields.
-      ![](./images/rdp_connect_mac1.png)
-
-    - **PC name:** - `User##-WINTOOLS-IP-ADDRESS`.
-    - **User Account** - **Add User Account**
-      - **Username:** `administrator`
-      - **Password:** `nutanix/4u`
-      - **Friendly name:** - `User##-WinTools`
-      - Click **Add > Add**
-      ![](./images/rdp_connect_mac2.png)
-
-    - Double-click the **User##-WinTools** entry.
-
-    - When prompted to accept the certificate, click **Continue**.
+3. Open Remote Desktop 
 
 4. From within the **Tools** folder on the desktop, open **PuTTY**.
 
