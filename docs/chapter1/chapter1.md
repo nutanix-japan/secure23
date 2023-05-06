@@ -42,15 +42,15 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
       
 6. Execute the following commands. These can be entered separately, or all at once.
 
-    ```
+    ```bash
     ncli
     ```
 
-    ```
+    ```bash
     rsyslog-config list-servers
     ```
 
-    ```
+    ```bash
     rsyslog-config list-modules server-name=ClusterLog
     ```
 
@@ -98,7 +98,7 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
 
 !!!warning 
           Making syslog module changes in the Prism Element web interface may erase the Command Line Interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) changes you are about to make. Do not use the Prism Element web interface to set syslog modules in this lab.
-          :::
+          
 
 1. From within the **Tools** folder on the desktop, open PuTTY.
 
@@ -245,7 +245,7 @@ We'll start with the highest privilege user, **adminuser##**, who can manage the
 
 Have you ever walked by an empty workstation and noticed it was unlocked? Timeouts ensure that sessions close when they are no longer in use, preventing unauthorized access and reducing the exposure to potential unauthorized access and data breaches. While it is common for organizations to enforce such timeouts for workstations and laptops, ensuring this is done for administrative connections to a cluster is essential to protect your environment.
 
-:::info "Informational Only"
+!!!info
        The below steps are for illustration purposes only. There are no changes for you to make.
 
 
