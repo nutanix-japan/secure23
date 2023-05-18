@@ -32,32 +32,32 @@ Nutanix Bootcamps are intended to be run within the Nutanix Hosted POC (HPOC) en
 
 1. Log in [here](https://phx-ras.xlabs.nutanix.com).
 
-2. Click on the <mark>Profile</mark> icon, and choose <mark>Download Client</mark>.
+2. Click on the Profile icon, and choose Download Client.
 
-3. Click the <mark>Download</mark> button for your operating system.
+3. Click the Download button for your operating system.
 
 4. Run the Parallels installation.
 
-5. Click <mark>Install Basic Client</mark>.
+5. Click Install Basic Client.
 
 6. Launch **Parallels Client**.
 
 7. Accept the EULA.
 
-8. When prompted with **You have no RAS Connection configured, would you like to add one now?**, click <mark>Yes</mark>.
+8. When prompted with **You have no RAS Connection configured, would you like to add one now?**, click Yes.
 
-9. Enter `phx-ras.xlabs.nutanix.com` in the field, and click <mark>Next > Next</mark>.
+9. Enter `phx-ras.xlabs.nutanix.com` in the field, and click Next > Next.
 
-10. Fill out the **Username:** and **Password:** fields, and click <mark>Connect</mark>.
+10. Fill out the **Username:** and **Password:** fields, and click Connect.
 
-11. Right-click on the **X-Labs - PHX** entry, and click <mark>Connect</mark>.
+11. Right-click on the **X-Labs - PHX** entry, and click Connect.
 
 **Frame**
 1. Log in [here](https://console.nutanix.com/x/labs).
 
-2. Enter your **Username**, click <mark>Next</mark>, enter your **Password**, and click <mark>Next</mark>.
+2. Enter your **Username**, click Next, enter your **Password**, and click Next.
 
-4. Click on <mark>Desktop</mark>.
+4. Click on Desktop.
 
 #### VDI Monitor Configuration Recommendations
 
@@ -78,13 +78,13 @@ Nutanix Bootcamps are intended to be run within the Nutanix Hosted POC (HPOC) en
 
 2. To download the client, log in [here](https://phx-vpn.xlabs.nutanix.com).
 
-3. Click <mark>Start > Download</mark> to begin downloading the client.
+3. Click Start > Download to begin downloading the client.
 
-4. Click <mark>HERE</mark> to continue the installation.
+4. Click HERE to continue the installation.
 
-5. Check the box <mark>Always allow **https://phx-vpn.xlabs.nutanix.com** to open **pulsesecure** links</mark> and click <mark>Yes > Yes > Yes</mark>. The client download and installation will now proceed.
+5. Check the box Always allow **https://phx-vpn.xlabs.nutanix.com** to open **pulsesecure** links and click Yes > Yes > Yes. The client download and installation will now proceed.
 
-6. Click <mark>Yes > Yes > Yes</mark>. The client will now open, and you are now connected.
+6. Click Yes > Yes > Yes. The client will now open, and you are now connected.
 
 #### VPN Monitor Configuration Recommendations
 
@@ -102,7 +102,7 @@ Nutanix Bootcamps are intended to be run within the Nutanix Hosted POC (HPOC) en
 
 3. **Bold** - Used to differentiate adjacent text. (ex. **Name** - Saul Goodman.)
 
-4. <mark>Highlight</mark> - A named entry you will click on (ex. Click <mark>Advanced</mark>.)
+4. Highlight - A named entry you will click on (ex. Click Advanced.)
 
 5. [Links]() - Added for additional contexts, such as an acronym (ex. [CISO](https://en.wikipedia.org/wiki/Chief_information_security_officer)) or software downloads (ex. [PuTTY](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.78-installer.msi))
 
@@ -137,7 +137,7 @@ Nutanix Bootcamps are intended to be run within the Nutanix Hosted POC (HPOC) en
     - Windows - **Remote Desktop Connection** (built-in) on Windows using **Start Menu > Remote Desktop Connection**
  - It is highly recommended to use Chrome. Using other browsers may present unexpected results and consume your allotted time. If you are presented with a security warning in Chrome, use one of the following methods to proceed. 
    - Chrome (method 1)
-     1. Click <mark>Advanced</mark>.
+     1. Click Advanced.
       ![](./images/chrome_warning_method1-1.png)
      2. Click on any blank section within the main browser window.
      3. Type `thisisunsafe`. Note: the text you type will not be visible.

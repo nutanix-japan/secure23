@@ -82,9 +82,7 @@ plugins:
     - search
 
 nav:
-    - 'Home': 
-       - 'Overview': index.md
-       - 'Environment Details': environment_details.md
+    - 'Home': index.md
     - 'Platform Security': chapter1/chapter1.md
     - 'Data Security': chapter2/chapter2.md
     - 'Network and Application Security': chapter3/chapter3.md

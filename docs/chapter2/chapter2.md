@@ -19,56 +19,56 @@ The lab cluster is already licensed for encryption. We will use per-VM, or entit
 !!!warning "Once Per Table"
           Only one user per table needs to perform this step.:::
 
-1. Navigate to Prism Central and Select <mark>:fontawesome-solid-bars: > Hardware > Clusters</mark>.
+1. Navigate to Prism Central and Select :fontawesome-solid-bars: > Hardware > Clusters.
 
 2. Select your cluster by clicking the check box.
 
 :::tip Already Encrypted?
-If your cluster is already encrypted, click <mark>Actions > Manage & Backup Keys</mark>, and proceed to step 7.
+If your cluster is already encrypted, click Actions > Manage & Backup Keys, and proceed to step 7.
 :::
 
-3. Click <mark>Actions > Enable Data-at-Rest Encryption</mark>. 
+3. Click Actions > Enable Data-at-Rest Encryption. 
 
    ![](./images/enable_dare1.png)
 
-4. Select <mark>Entity Encryption</mark>, and click <mark>Save Encryption Type</mark>.
+4. Select Entity Encryption, and click Save Encryption Type.
 
-5. Ensure <mark>Native KMS (Local)</mark> is selected, and click <mark>Enable Encryption</mark>.
+5. Ensure Native KMS (Local) is selected, and click Enable Encryption.
 
-6. Type `SET` in the confirmation window, and click <mark>Set Encryption</mark>.
+6. Type `SET` in the confirmation window, and click Set Encryption.
 
 7. Before encrypting any VMs, it is recommended to back up the encryption keys somewhere safe.
 
-8. Click <mark>Backup Keys</mark>.
+8. Click Backup Keys.
 
-9. Enter `nutanix/4u` within both the **Password** and **Confirm Password** fields. Click <mark>Backup Key</mark>. A download will begin for a .zip file containing your backup key, which allows you to recover the encryption key. Click <mark>Close</mark>.
+9. Enter `nutanix/4u` within both the **Password** and **Confirm Password** fields. Click Backup Key. A download will begin for a .zip file containing your backup key, which allows you to recover the encryption key. Click Close.
 
 #### Encrypting With Storage Policies
 
 Next, we'll configure **Storage Policies** that can apply to specific sets of VMs or even individual VMs based on category.
 
-1. Navigate to <mark>:fontawesome-solid-bars: > Compute & Storage > Storage Policies</mark>.
+1. Navigate to :fontawesome-solid-bars: > Compute & Storage > Storage Policies.
 
-2. Click <mark>:fa-plus: Create Storage Policy</mark>. Fill out the following fields.
+2. Click :fa-plus: Create Storage Policy. Fill out the following fields.
  
     - **Name** - `User##-StoragePolicy`
-    - Within the **Encryption** section, choose <mark>Enabled</mark> from the **Value** drop-down.
+    - Within the **Encryption** section, choose Enabled from the **Value** drop-down.
 
-3. Click <mark>Next</mark>.
+3. Click Next.
 
-4. Type `Tenant: User##` within the **Add Category** field. Select the <mark>Tenant: User##</mark> entry from the list, and click <mark>Save</mark>.
+4. Type `Tenant: User##` within the **Add Category** field. Select the Tenant: User## entry from the list, and click Save.
  
    ![](./images/add_category_tenant.png)
 
     Now all VMs assigned the category **Tenant: User##** will be encrypted as this policy is enforced. Let's test this out with **User##-WinTools**, which we had assigned the **Tenant: User##** category in Chapter 1.
 
-5. Navigate to <mark>:fontawesome-solid-bars: > Compute & Storage > VMs</mark>.
+5. Navigate to :fontawesome-solid-bars: > Compute & Storage > VMs.
 
-6. Right-click on <mark>User##-WinTools</mark>, and choose <mark>Clone</mark>.
+6. Right-click on User##-WinTools, and choose Clone.
 
-7. Enter `User##-WinTools-Clone` within the **Name** field, and click <mark>Next > Next > Next > Clone VM</mark>.
+7. Enter `User##-WinTools-Clone` within the **Name** field, and click Next > Next > Next > Clone VM.
 
-8. Once the clone has been created, click directly on <mark>User##-WinTools-Clone</mark>.
+8. Once the clone has been created, click directly on User##-WinTools-Clone.
 
 9. Refer to the **Storage Properties** pane. Is your VM encrypted?
 
@@ -76,39 +76,39 @@ Next, we'll configure **Storage Policies** that can apply to specific sets of VM
     
     This method allows you to choose which individual VMs are encrypted without encrypting the entire cluster.
 
-10. Choose <mark>Power On</mark> from the **More** drop-down.
+10. Choose Power On from the **More** drop-down.
 
 ### Snapshots
 
 Snapshots create a local point-in-time recovery option that can act as a first-line defense for ransomware or data loss protection. They can also be handy for incident response and other investigations. We'll create snapshots that can act as an "undo" if you need to restore from a minor incident. 
 
-1. Navigate to <mark>:fontawesome-solid-bars: > Data Protection > Protection Policies</mark>.
+1. Navigate to :fontawesome-solid-bars: > Data Protection > Protection Policies.
 
-2. Click <mark>Create Protection Policy</mark>. Fill out the following fields.
+2. Click Create Protection Policy. Fill out the following fields.
     - **Policy Name** - ``User##-LocalProtectionPolicy``
-    - Select your cluster from the **Cluster** drop-down, and click <mark>Save</mark>.
+    - Select your cluster from the **Cluster** drop-down, and click Save.
 
-3. Within the **Primary Location** section, click <mark>:fa-plus: Add Local Schedule > Save Schedule</mark>.
+3. Within the **Primary Location** section, click :fa-plus: Add Local Schedule > Save Schedule.
 
-4. Within the **Recovery Location** section, click <mark>Cancel</mark>, as we aren't replicating to a remote location within this lab.
+4. Within the **Recovery Location** section, click Cancel, as we aren't replicating to a remote location within this lab.
 
-5. Click <mark>Next</mark>.
+5. Click Next.
 
-6. Within the **Categories** section, check the box adjacent to **Tenant: User##**, and click <mark>Add</mark>.
+6. Within the **Categories** section, check the box adjacent to **Tenant: User##**, and click Add.
 
-7. Click <mark>Create</mark>.
+7. Click Create.
 
     Every VM within your **Tenant: User##** category will be protected by the local protection policy you just created.
 
-8. We will verify that these snapshots are being created as expected. Navigate to <mark>:fontawesome-solid-bars: > Compute & Storage > VMs</mark>.
+8. We will verify that these snapshots are being created as expected. Navigate to :fontawesome-solid-bars: > Compute & Storage > VMs.
 
-9. Click directly on <mark>User##-WinTools</mark>.
+9. Click directly on User##-WinTools.
 
-10. Click <mark>Recovery Points</mark> from the top menu bar to view the recent snapshots. Note: It can take a few minutes for these to show up in the UI. Take advantage of this time to stand up and stretch. You probably need it at this point! :smile:
+10. Click Recovery Points from the top menu bar to view the recent snapshots. Note: It can take a few minutes for these to show up in the UI. Take advantage of this time to stand up and stretch. You probably need it at this point! :smile:
 
-11. Check the box adjacent to **User##-WinTools**, and click <mark>Actions > Clone</mark> to create a new VM from snapshot. For brevity, you created a **Crash Consistent** snapshot, which does not restore the memory state of the VM. However, this enables you to restore to a point before a known incident.
+11. Check the box adjacent to **User##-WinTools**, and click Actions > Clone to create a new VM from snapshot. For brevity, you created a **Crash Consistent** snapshot, which does not restore the memory state of the VM. However, this enables you to restore to a point before a known incident.
 
-12. Leave the **New VM Name** as default, and click <mark>Clone</mark>.
+12. Leave the **New VM Name** as default, and click Clone.
 
     Snapshots are a vital part of your security plan. However, since they are typically stored on the same cluster as the original VMs, you should always rely on protecting your workloads outside of snapshots. If the cluster is compromised or unavailable, so are the snapshots. We need a method that makes a copy of our data off-cluster.
 

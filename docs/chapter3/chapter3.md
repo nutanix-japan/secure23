@@ -14,49 +14,49 @@ This pre-created Blueprint has security best practices and categories set by def
 
 To save you lab time, we've created the Projects and Blueprints.
 
-1. Navigate to <mark>:fontawesome-solid-bars: > Services > Calm > Projects</mark>. ![](./images/projects_icon.png)
+1. Navigate to :fontawesome-solid-bars: > Services > Calm > Projects. ![](./images/projects_icon.png)
 
-2. Click the Project <mark>Tenant##</mark>.
+2. Click the Project Tenant##.
 
-3. Click <mark>Users & Groups</mark> within the top menu.
+3. Click Users & Groups within the top menu.
 
     Note: we've added consumer## to this project already.
 
-4. Click <mark>Add/Edit Users and Groups</mark>.
+4. Click Add/Edit Users and Groups.
 
     What role does the consumer## user have? You worked with these RBAC roles earlier in the lab.
 
-5. Close this window by clicking the <mark>:fa-x:</mark>.
+5. Close this window by clicking the :fa-x:.
 
-6. Navigate to <mark>:fontawesome-solid-bars: > Services > Calm > Blueprints</mark>. ![](./images/blueprints.png)
+6. Navigate to :fontawesome-solid-bars: > Services > Calm > Blueprints. ![](./images/blueprints.png)
 
 7. Check directly on **User##-DeployFiestaApp**.
 
-8. Click <mark>Publish</mark>.
+8. Click Publish.
 
-9. Select <mark>Publish with secrets</mark>, and enter `1.0.0` within the **Initial Version** field. Click <mark>Submit for Approval</mark>.
+9. Select Publish with secrets, and enter `1.0.0` within the **Initial Version** field. Click Submit for Approval.
 
    ![](./images/publish_blueprint.png)
 
 10. Navigate to the **Marketplace Manager**. ![](./images/marketplacemanager_icon.png)
 
-11. Click <mark>Approval Pending</mark> from the top menu.
+11. Click Approval Pending from the top menu.
 
 12. Select the check box adjacent to **User##-DeployFiestaApp**.
 
-13. Within the **Projects Shared With** drop-down, select your <mark>Tenant##</mark> Project.
+13. Within the **Projects Shared With** drop-down, select your Tenant## Project.
 
-14. Within the **Category** dropdown, select <mark>DevOps</mark>.
+14. Within the **Category** dropdown, select DevOps.
 
-1. Click the <mark>Approve</mark> check mark.
+1. Click the Approve check mark.
 
-15. Click <mark>Approved</mark> from the top menu.
+15. Click Approved from the top menu.
 
 16. Search for and select your **User##-DeployFiestaApp** by typing `User##` within the **Type here to apply filters** field, and pressing **Enter**. Select the check box adjacent to **User##-DeployFiestaApp**.
 
-17. Click <mark>Publish</mark>.
+17. Click Publish.
 
-18. Select <mark>Sign Out</mark> from the username drop-down (in this case <mark>Adminuser##</mark>) located in the upper right corner.
+18. Select Sign Out from the username drop-down (in this case Adminuser##) located in the upper right corner.
 
 ## Repeatable Security: NCM Self-Service
 
@@ -66,13 +66,13 @@ You'll now connect to Prism Central as a limited privilege tenant consumer user 
     - **username** - `consumer##@ntnxlab.local`
     - **password** - `nutanix/4u`
 
-2. Navigate to <mark>:fontawesome-solid-bars: > Calm > Marketplace</mark>. ![Marketplace](../images/marketplace_icon.png)
+2. Navigate to :fontawesome-solid-bars: > Calm > Marketplace. ![Marketplace](../images/marketplace_icon.png)
 
-3. Within the **Search marketplace** field enter `user##`, and click <mark>Get</mark>.
+3. Within the **Search marketplace** field enter `user##`, and click Get.
 
     ![](./images/search_marketplace.png)
 
-4. Click <mark>Launch</mark>. Fill out the following fields, and click <mark>Deploy</mark>.
+4. Click Launch. Fill out the following fields, and click Deploy.
 
     - **Application Name** `User##-FiestaApp`
     - **Initials** - `User##`
@@ -92,27 +92,27 @@ Follow along in this [Security Central Security Planning demo](https://nutanix.s
 
 We have shown how **Security Central** can help you examine your applications and plan our security policies. Now, let's check on the status of our application deployment.
 
-1. Navigate to <mark>:fontawesome-solid-bars: > Compute & Storage > VMs</mark>. You will see the VMs created and used by your FiestaApp. Notice you only see VMs associated with your Project. You will not see any VMs created by other projects or users since **consumer##@ntnxlab.local** has limited permissions.
+1. Navigate to :fontawesome-solid-bars: > Compute & Storage > VMs. You will see the VMs created and used by your FiestaApp. Notice you only see VMs associated with your Project. You will not see any VMs created by other projects or users since **consumer##@ntnxlab.local** has limited permissions.
 
     ![](./images/user_vms.png)
 
 2. Note the IP address of **User##-WebServer**.
 
-3. Open a new browser tab, type `http://FIESTA-WEBSERVER-IP`, and press <mark>Enter</mark>. Spend a few moments to purchase party supplies to create web and database traffic.
+3. Open a new browser tab, type `http://FIESTA-WEBSERVER-IP`, and press Enter. Spend a few moments to purchase party supplies to create web and database traffic.
 
-4. Within your Remote Desktop, open **Command Prompt** by clicking <mark>Start</mark>, typing `command prompt`, and pressing enter.
+4. Within your Remote Desktop, open **Command Prompt** by clicking Start, typing `command prompt`, and pressing enter.
 
 5. Type `ping -t FIESTA-WEBSERVER-IP-ADDRESS` and press **Enter** to start a continuous ping from your **User##-WinTools** VM to the IP address of your Fiesta web server.
 
     Now let's secure the Fiesta App using Flow Network Security.
 
-6. Within Prism Central, select <mark>Sign Out</mark> from the username drop-down (in this case <mark>Consumer##</mark>) located in the upper right corner. Log into Prism Central.
+6. Within Prism Central, select Sign Out from the username drop-down (in this case Consumer##) located in the upper right corner. Log into Prism Central.
 
 7. Log into Prism Central.
     - **username** - `adminuser##@ntnxlab.local`
     - **password** - `nutanix/4u`
 
-8. Navigate to <mark>:fontawesome-solid-bars: > Network & Security > Security Policies</mark>.
+8. Navigate to :fontawesome-solid-bars: > Network & Security > Security Policies.
 
 9. Click the Security Policy **User##-FiestaApp**. This is the policy associated with your Fiesta App deployment.
 
@@ -133,7 +133,7 @@ We have shown how **Security Central** can help you examine your applications an
 
     Let's change the policy mode to Enforce. 
 
-12. Click <mark>Enforce</mark> from the upper right menu. 
+12. Click Enforce from the upper right menu. 
 
 13. Type **ENFORCE** into the confirmation window.
 
@@ -141,7 +141,7 @@ We have shown how **Security Central** can help you examine your applications an
 
     This secondary confirmation helps customers avoid activating a misconfigured security policy, which could result in application interruptions or a weakened security state.
 
-14. Close your security policy by clicking :fa-x: in the top right corner. Open your policy by selecting your <mark>User##-FiestaApp</mark> security policy.
+14. Close your security policy by clicking :fa-x: in the top right corner. Open your policy by selecting your User##-FiestaApp security policy.
 
     The traffic previously shown in yellow while the policy was in monitor mode is now blocked and shown in red.
 
@@ -160,9 +160,9 @@ Let's go back to our syslog server and see what it detected. While our policy dr
 1. Open your browser, enter `http://GRAYLOG-IP-ADDRESS:9000`, and press the **Enter** key. Log in with the following credentials:
    - **Username** - `admin`
    - **Password** - `nutanix/4u`
-2. Click <mark>Streams > All Messages</mark>.
+2. Click Streams > All Messages.
 
-3. Within the time range drop-down, select <mark>Search in the last 30 minutes</mark>. Enter the search term `hitcount*` and press the <mark>Enter</mark> key.
+3. Within the time range drop-down, select Search in the last 30 minutes. Enter the search term `hitcount*` and press the Enter key.
 
     Find the log entries associated with your application and policy and note the **ACTION** field in the message.
 
@@ -174,21 +174,21 @@ Let's go back to our syslog server and see what it detected. While our policy dr
 
     We will now amend this policy to allow ICMP between **User##-WinTools** to your **User##-WebServer**.
 
-5. Return to Prism Central, and click <mark>Update</mark>. To allow the discovered flows in the Security Policy,
+5. Return to Prism Central, and click Update. To allow the discovered flows in the Security Policy,
 
-6. Click <mark>Next > Ok, got it!</mark>.
+6. Click Next > Ok, got it!.
 
 7. Hover over the **User##-WinTools** entry within the **Inbounds > Blocked** section.
 
-8. Click <mark>Allow Traffic</mark>.
+8. Click Allow Traffic.
 
     ![](./images/C3-SecAdd-22.png)
 
-9. Check the box adjacent to **User##-WinTools** within the **Source** column, and click <mark>Allow 1 Discovered Traffic</mark> in the lower right corner. 
+9. Check the box adjacent to **User##-WinTools** within the **Source** column, and click Allow 1 Discovered Traffic in the lower right corner. 
 
     ![](./images/C3-SecAd2-23.png)
 
-10. Click <mark>Next > Save and Enforce</mark>.
+10. Click Next > Save and Enforce.
 
 11. Click the Security Policy **User##-FiestaApp**. You will now see the previously-blocked ICMP traffic flowing between **User##-WinTools** to your **User##-WebServer**.
 
