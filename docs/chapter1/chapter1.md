@@ -21,7 +21,7 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
 !!!note
         Before you start doing the labs, note the following Active Directory user names.
 
-        Get your username from ``Lab GTS23- Secure`` section the HPOC [lookup](https://lookup.howntnx.win), 
+        Get your username from ``Lab GTS23- Secure`` section the HPOC [lookup](http://lookup.apj-cxrules.win), 
         
         E.g: if your username is ``PHX-POC218-User01``, then ``##`` represents ``01``
         
