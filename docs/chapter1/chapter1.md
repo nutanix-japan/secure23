@@ -33,7 +33,7 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
 1. Log into Prism Central.
    
     - **username** - `adminuser##@ntnxlab.local` (**##**is your user number)
-    - **password** - `nutanix/4u` 
+    - **password** - `nutanix default` 
 
 2. Navigate to :fontawesome-solid-bars: > Compute & Storage > VMs**. Look for VMs named **Graylog** and **User##-WinTools**. Make note of both IP addresses within the **IP Addresses** column.
 
@@ -43,7 +43,7 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
 
 4. From within the **Tools** folder on the desktop, open **PuTTY**.
 
-5. Within the **Specify the destination you want to connect to** section, enter `nutanix@PRISM-CENTRAL-IP-ADDRESS` in the **Host Name (or IP address)** field. Click **Open.** When prompted for a password enter `nutanix/4u`.
+5. Within the **Specify the destination you want to connect to** section, enter `nutanix@PRISM-CENTRAL-IP-ADDRESS` in the **Host Name (or IP address)** field. Click **Open.** When prompted for a password enter `nutanix default`.
 
     ![](./images/putty.png)
 
@@ -175,7 +175,7 @@ First, we'll generate some events that will cause logs to be sent to our syslog 
 
 5. Open your browser, enter `http://GRAYLOG-IP-ADDRESS:9000`, and press the **Enter** key. Log in with the following credentials:
    - **Username** - `admin`
-   - **Password** - `nutanix/4u`
+   - **Password** - `nutanix default`
 
 6. Click **Streams > All Messages**.
 
@@ -236,7 +236,7 @@ We'll start with the highest privilege user, **adminuser##**, who can manage the
 
 7. Log into Prism Central.
     - **username** - `operator##@ntnxlab.local`
-    - **password** - `nutanix/4u`
+    - **password** - `nutanix default`
 
 8. Navigate to **:fontawesome-solid-bars: > Data Protection**.
 
@@ -263,7 +263,7 @@ Have you ever walked by an empty workstation and noticed it was unlocked? Timeou
 
 1. Log into Prism Central.
     - **username** - `adminuser##@ntnxlab.local`
-    - **password** - `nutanix/4u`
+    - **password** - `nutanix default`
 
 2. Navigate to **:fontawesome-solid-bars: > Prism Central Settings**. You may need to scroll down to see this entry.
 
@@ -300,7 +300,7 @@ Both keys are provided for this lab to eliminate the typical process for creatin
 
 1. Return to your Remote Desktop session. Log into Prism Central.
     - **username** - `adminuser##@ntnxlab.local`
-    - **password** - `nutanix/4u`
+    - **password** - `nutanix default`
 
 2. Navigate to **:fontawesome-solid-bars: > Prism Central Settings**. From the **Security** section, select **Cluster Lockdown**. You may need to scroll down to see this entry.
 

@@ -41,7 +41,7 @@ If your cluster is already encrypted, click Actions > Manage & Backup Keys, and 
 
 8. Click Backup Keys.
 
-9. Enter `nutanix/4u` within both the **Password** and **Confirm Password** fields. Click Backup Key. A download will begin for a .zip file containing your backup key, which allows you to recover the encryption key. Click Close.
+9. Enter `nutanix default` within both the **Password** and **Confirm Password** fields. Click Backup Key. A download will begin for a .zip file containing your backup key, which allows you to recover the encryption key. Click Close.
 
 #### Encrypting With Storage Policies
 

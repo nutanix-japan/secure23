@@ -64,7 +64,7 @@ You'll now connect to Prism Central as a limited privilege tenant consumer user 
 
 1. Log into Prism Central.
     - **username** - `consumer##@ntnxlab.local`
-    - **password** - `nutanix/4u`
+    - **password** - `nutanix default`
 
 2. Navigate to :fontawesome-solid-bars: > Calm > Marketplace. ![Marketplace](../images/marketplace_icon.png)
 
@@ -110,7 +110,7 @@ We have shown how **Security Central** can help you examine your applications an
 
 7. Log into Prism Central.
     - **username** - `adminuser##@ntnxlab.local`
-    - **password** - `nutanix/4u`
+    - **password** - `nutanix default`
 
 8. Navigate to :fontawesome-solid-bars: > Network & Security > Security Policies.
 
@@ -159,7 +159,7 @@ Let's go back to our syslog server and see what it detected. While our policy dr
 
 1. Open your browser, enter `http://GRAYLOG-IP-ADDRESS:9000`, and press the **Enter** key. Log in with the following credentials:
    - **Username** - `admin`
-   - **Password** - `nutanix/4u`
+   - **Password** - `nutanix default`
 2. Click Streams > All Messages.
 
 3. Within the time range drop-down, select Search in the last 30 minutes. Enter the search term `hitcount*` and press the Enter key.
