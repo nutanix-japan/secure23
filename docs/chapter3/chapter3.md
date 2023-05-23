@@ -14,7 +14,7 @@ This pre-created Blueprint has security best practices and categories set by def
 
 To save you lab time, we've created the Projects and Blueprints.
 
-1. Navigate to :fontawesome-solid-bars: > Services > Calm > Projects. ![](./images/projects_icon.png)
+1. Navigate to :fontawesome-solid-bars: > Services > Calm > Projects > :material-folder-multiple:
 
 2. Click the Project Tenant##.
 
@@ -48,15 +48,15 @@ To save you lab time, we've created the Projects and Blueprints.
 
 14. Within the **Category** dropdown, select DevOps.
 
-1. Click the Approve check mark.
+15. Click the Approve check mark.
 
-15. Click Approved from the top menu.
+16. Click Approved from the top menu.
 
-16. Search for and select your **User##-DeployFiestaApp** by typing `User##` within the **Type here to apply filters** field, and pressing **Enter**. Select the check box adjacent to **User##-DeployFiestaApp**.
+17. Search for and select your **User##-DeployFiestaApp** by typing `User##` within the **Type here to apply filters** field, and pressing **Enter**. Select the check box adjacent to **User##-DeployFiestaApp**.
 
-17. Click Publish.
+18. Click Publish.
 
-18. Select Sign Out from the username drop-down (in this case Adminuser##) located in the upper right corner.
+19. Select Sign Out from the username drop-down (in this case Adminuser##) located in the upper right corner.
 
 ## Repeatable Security: NCM Self-Service
 

@@ -1,8 +1,7 @@
 ---
 next: /chapter2/chapter2.md
 ---
-
-# Chapter 1: Platform Security
+## Chapter 1: Platform Security
 
 Welcome to the **Secure the Nutanix Cloud Platform (NCP)** hands-on lab. Security is more than firewalls and encryption. This lab aims to show how all parts of the NCP contribute to deploying a secure cloud. You'll learn to configure security at all layers, including platform, data, network, and application.
 
@@ -19,11 +18,24 @@ In this lab, we've deployed a Graylog server on each cluster to collect and disp
 !!!warning
            Making syslog module changes in the Prism Central web interface may erase the Command Line Interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) changes you are about to make. Do not use the Prism Central web interface to set syslog modules in this lab.
 
+!!!note
+        Before you start doing the labs, note the following Active Directory user names.
+
+        Get your username from ``Lab GTS23- Secure`` section the HPOC [lookup](https://lookup.howntnx.win), 
+        
+        E.g: if your username is ``PHX-POC218-User01``, then ``##`` represents ``01``
+        
+        - adminuser`##` becomes adminuser`01`
+        - operator`##` becomes operator`01` 
+
+        Throughout the lab, replace ## with your appropriate user number. 
+
 1. Log into Prism Central.
-    - **username** - `adminuser##@ntnxlab.local`
+   
+    - **username** - `adminuser##@ntnxlab.local` (**##**is your user number)
     - **password** - `nutanix/4u` 
 
-2. Navigate to **:fontawesome-solid-bars: > Compute & Storage > VMs**. Look for VMs named **Graylog** and **User##-WinTools**. Make note of both IP addresses within the **IP Addresses** column.
+2. Navigate to :fontawesome-solid-bars: > Compute & Storage > VMs**. Look for VMs named **Graylog** and **User##-WinTools**. Make note of both IP addresses within the **IP Addresses** column.
 
     We’ll use Graylog to receive audit and [syslog](https://en.wikipedia.org/wiki/Syslog) events from the cluster.
 
